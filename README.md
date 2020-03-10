@@ -40,11 +40,11 @@ For more information see:
 Your base64 program should follow general approach:
 
     LOOP
-        read 24-bits (i.e., three bytes) from STDIN, say 'three_bytes'
-        marshall the three bytes into a single variable (of type int), say 'v'
-        decompose the 24 bits into a set of four 6-bit variables (each of type char), say 'w', 'x', 'y', and 'z'
-        map each of the four variables (w, x, y, z) into the appropriate base64 ascii character
-        write each of the four ascii variables (w, x, y, z) to STDOUT
+        * read 24-bits (i.e., three bytes) from STDIN, say 'three_bytes'
+        * marshall the three bytes into a single variable (of type int), say 'v'
+        * decompose the 24 bits into a set of four 6-bit variables (each of type char), say 'w', 'x', 'y', and 'z'
+        * map each of the four variables (w, x, y, z) into the appropriate base64 ascii character
+        * write each of the four ascii variables (w, x, y, z) to STDOUT
     UNTIL EOF
 
 ### Exception:
