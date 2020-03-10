@@ -60,11 +60,8 @@ processing.)
 To account for these missing bytes, you need to add appropriate
 padding to the base64 oputput. In the case the read() subroutine
 returns a '1', you need to:
-
-1. ensure 'v' is padded on the right with
-16 zero (0) bits
-a1. map both 'y' and 'z' to the padding character (=),
-and not to 'A'
+1. ensure 'v' is padded on the right with 16 zero (0) bits
+1. map both 'y' and 'z' to the padding character (=), and not to 'A'
 
 In the case the read() subroutine returns a '2', you need to:
 1. ensure 'v' is padded on the right with 8 zero (0) bits
